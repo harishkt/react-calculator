@@ -8,13 +8,13 @@
     text-align: center;
     font-family: "Ubuntu", sans-serif;
     font-size: 38px;
-    color: #0BDCA8;
+    color: yellowgreen;
     margin: 10px;
 }
 
 .case {
-    width: 450px;
-    background: #37352B;
+    width: 550px;
+    background: darkslategrey;
     border: 1px solid #272932;
     border-radius: 2px;
     text-align: center;
@@ -22,10 +22,10 @@
 }
 
 .inputField {
-    width: 380px;
+    width: 480px;
     font-size: 30px;
-    padding: 5px 15px 5px 0;
-    text-align: right;
+    padding: 5px 15px 5px 5px;
+    text-align: center;
     margin-bottom: 5px;
     border: 1px solid #0BDCA8;
     background: #59656F;
