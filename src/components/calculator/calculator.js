@@ -9,12 +9,11 @@ export class Calculator extends Component {
 		this.state = {
 			input: '',
 			output: ''
-		}
+		};
 		this.handleClick = this.handleClick.bind(this);
 	}
 
-	handleClick(event) {
-		const value = event.target.value;
+	handleClick(value) {
 		switch (value) {
 			case 'Enter': {
 				const output = eval(this.state.input).toString();
@@ -28,6 +27,7 @@ export class Calculator extends Component {
 					input: '',
 					output: ''
 				});
+				break;
 			}
 			default: {
 				this.setState((initState) => ({
@@ -40,12 +40,16 @@ export class Calculator extends Component {
 	}
 	render() {
 		const { input, output } = this.state;
-		console.log(`In render - input is ${input} and output is ${output}`);
 		return(
-			<div>
-				<CalculationPresentation question={input} answer={output}/>
-				<CalculationController handleClick={this.handleClick} />
+			<div className='body'>
+				<div className='calcWrapper'>
+					<div className='case'>
+						<CalculationPresentation question={input} answer={output}/>
+						<CalculationController handleClick={this.handleClick} />
+					</div>
+				</div>
 			</div>
+
 			);
 	}
 }

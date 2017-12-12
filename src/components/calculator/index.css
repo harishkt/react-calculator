@@ -1,0 +1,26 @@
+.body {
+    min-width: 700px;
+    background: #f94e3f;
+    color: #272932;
+}
+.calcWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.title {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 38px;
+    color: #0BDCA8;
+    margin: 10px;
+}
+
+.case {
+    width: 450px;
+    background: #37352B;
+    border: 1px solid #272932;
+    border-radius: 2px;
+    text-align: center;
+    padding-bottom: 15px;
+}

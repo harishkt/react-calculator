@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Button = ({ value, className, handleClick }) => {
+	const clickHandler = () => handleClick(value);
 	return(
 		<button
-			type='button' className={className} onClick={handleClick}
+			type='button' className={className} onClick={clickHandler}
 		>{value}
 		</button>
 	)

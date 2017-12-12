@@ -15,6 +15,7 @@ const TextBox = ({ value, className }) => {
 const presenter = ({ question, answer, className }) => {
 	return(
 		<div>
+			<p className='title'> JavaScript Calculator </p>
 			<TextBox className={className} value={question}/>
 			<TextBox className={className} value={answer}/>
 		</div>
