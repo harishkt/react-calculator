@@ -11,33 +11,33 @@ const Button = ({ value, className, handleClick }) => {
 }
 const controller = ({ handleClick, className }) => {
 	return(
-		<div>
+		<div className={className}>
 			<div>
-				<Button value='7' handleClick={handleClick} className={className}/>
-				<Button value='8' handleClick={handleClick} className={className}/>
-				<Button value='9' handleClick={handleClick} className={className}/>
-				<Button value='/' handleClick={handleClick} className={className}/>
+				<Button value='7' handleClick={handleClick} className='button'/>
+				<Button value='8' handleClick={handleClick} className='button'/>
+				<Button value='9' handleClick={handleClick} className='button'/>
+				<Button value='/' handleClick={handleClick} className='button'/>
 			</div>
 			<div>
-				<Button value='4' handleClick={handleClick} className={className}/>
-				<Button value='5' handleClick={handleClick} className={className}/>
-				<Button value='6' handleClick={handleClick} className={className}/>
-				<Button value='*' handleClick={handleClick} className={className}/>
+				<Button value='4' handleClick={handleClick} className='button'/>
+				<Button value='5' handleClick={handleClick} className='button'/>
+				<Button value='6' handleClick={handleClick} className='button'/>
+				<Button value='*' handleClick={handleClick} className='button'/>
 			</div>
 			<div>
-				<Button value='1' handleClick={handleClick} className={className}/>
-				<Button value='2' handleClick={handleClick} className={className}/>
-				<Button value='3' handleClick={handleClick} className={className}/>
-				<Button value='+' handleClick={handleClick} className={className}/>
+				<Button value='1' handleClick={handleClick} className='button'/>
+				<Button value='2' handleClick={handleClick} className='button'/>
+				<Button value='3' handleClick={handleClick} className='button'/>
+				<Button value='+' handleClick={handleClick} className='button'/>
 			</div>
 			<div>
-				<Button value='0' handleClick={handleClick} className={className}/>
-				<Button value='.' handleClick={handleClick} className={className}/>
-				<Button value='CE' handleClick={handleClick} className={className}/>
-				<Button value='-' handleClick={handleClick} className={className}/>
+				<Button value='0' handleClick={handleClick} className='button'/>
+				<Button value='.' handleClick={handleClick} className='button'/>
+				<Button value='CE' handleClick={handleClick} className='button'/>
+				<Button value='-' handleClick={handleClick} className='button'/>
 			</div>
 			<div>
-				<Button value='Enter' handleClick={handleClick} className={className} />
+				<Button value='Enter' handleClick={handleClick} className='enterBtn' />
 			</div>
 		</div>
 	)

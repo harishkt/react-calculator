@@ -41,15 +41,12 @@ export class Calculator extends Component {
 	render() {
 		const { input, output } = this.state;
 		return(
-			<div className='body'>
 				<div className='calcWrapper'>
 					<div className='case'>
-						<CalculationPresentation question={input} answer={output}/>
-						<CalculationController handleClick={this.handleClick} />
+						<CalculationPresentation className='inputField' question={input} answer={output}/>
+						<CalculationController className='calcUI' handleClick={this.handleClick} />
 					</div>
 				</div>
-			</div>
-
 			);
 	}
 }

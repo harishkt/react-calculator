@@ -1,8 +1,4 @@
-.body {
-    min-width: 700px;
-    background: #f94e3f;
-    color: #272932;
-}
+
 .calcWrapper {
     display: flex;
     justify-content: center;
@@ -23,4 +19,41 @@
     border-radius: 2px;
     text-align: center;
     padding-bottom: 15px;
+}
+
+.inputField {
+    width: 380px;
+    font-size: 30px;
+    padding: 5px 15px 5px 0;
+    text-align: right;
+    margin-bottom: 5px;
+    border: 1px solid #0BDCA8;
+    background: #59656F;
+    color: #272932;
+}
+
+.calcUI {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    space-between: space-between;
+    justify-content: center;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #272932;
+    background: lightcoral;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+}
+
+.enterBtn {
+    width: 400px;
+    height: 100px;
+    border: 1px solid #272932;
+    background: #67D5B5;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 35px;
 }
